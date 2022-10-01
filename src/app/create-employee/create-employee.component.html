@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create user </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Username</label>
+            <input type="text" class ="form-control" id = "username"
+                [(ngModel)] = "employee.username" name = "username">
+        </div>
+    
+        <div class="form-group">
+            <label> Role</label>
+            <input type="text" class ="form-control" id = "roleName"
+                [(ngModel)] = "employee.roleName" name = "roleName">
+        </div>
+    
+        <div class="form-group">
+            <label> Salary</label>
+            <input type="text" class ="form-control" id = "salary"
+                [(ngModel)] = "employee.salary" name = "salary">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
