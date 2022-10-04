@@ -1,5 +1,5 @@
 <div class="col-md-6 offset-md-3">
-    <h3> Create user </h3>
+    <h6 style="margin-top: 35px" > please enter the new user's informations here</h6>
     <form (ngSubmit) = "onSubmit()">
     
         <div class="form-group">
@@ -8,19 +8,24 @@
                 [(ngModel)] = "employee.username" name = "username">
         </div>
     
-        <div class="form-group">
-            <label> Role</label>
-            <input type="text" class ="form-control" id = "roleName"
-                [(ngModel)] = "employee.roleName" name = "roleName">
+        <div class="form-group"  style="margin-top: 20px">
+            <label >Role</label>
+
+<select [(ngModel)] = "employee.roleName" name="role" id="role" style="margin-left: 20px">
+    <option value="">--Please choose an option--</option>
+    <option value="employee">employee</option>
+    <option value="companyOwner">companyOwner</option>
+
+</select>
         </div>
     
-        <div class="form-group">
+        <div class="form-group" style="margin-top: 20px">
             <label> Salary</label>
             <input type="text" class ="form-control" id = "salary"
                 [(ngModel)] = "employee.salary" name = "salary">
         </div>
     
-        <button class = "btn btn-success" type ="submit">Submit</button>
+        <button class = "btn btn-outline-primary" style="margin-top: 35px" type ="submit">Submit</button>
     
     </form>
     </div> 
